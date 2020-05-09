@@ -1,0 +1,23 @@
+server:
+  port: 8003
+
+spring:
+  application:
+    name: jxs-client
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/jxs?useUnicode=true&characterEncoding=utf8&serverTimezone=CTT
+    username: root
+    password: Lj136528
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

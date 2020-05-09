@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: jxs-uaa
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/jxs?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: Lj136528
+    jackson:
+      date-format: yyyy-MM-dd
+      time-zone: GMT+8
+  main:
+    allow-bean-definition-overriding: true
+
+server:
+  port: 8004
+  servlet:
+    contextPath: /uaa
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8001/eureka/
+  instance:
+    prefer-ip-address: true

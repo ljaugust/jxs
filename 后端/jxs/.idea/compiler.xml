@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jxs-zuul" />
+        <module name="jxs-client" />
+        <module name="jxs-server" />
+        <module name="jxs-uaa" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jxs" target="1.8" />
+      <module name="jxs-client" target="1.8" />
+      <module name="jxs-server" target="1.8" />
+      <module name="jxs-uaa" target="1.8" />
+      <module name="jxs-zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jxs" options="-parameters" />
+      <module name="jxs-client" options="-parameters" />
+      <module name="jxs-server" options="-parameters" />
+      <module name="jxs-uaa" options="-parameters" />
+      <module name="jxs-zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

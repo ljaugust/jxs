@@ -1,0 +1,44 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8001/eureka/
+  instance:
+    prefer-ip-address: true
+
+server:
+  port: 8002
+spring:
+  application:
+    name: jxs-zuul
+
+zuul:
+  host:
+    maxTotalConnections: 600000
+    maxPerRouteConnections: 600000
+  semaphore:
+    max-semaphores: 200
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: jxs-client
+      stripPrefix: true
+    api-b:
+      path: /uaa/**
+      serviceId: jxs-uaa
+      stripPrefix: false
+  ignored-services: "*"
+  sensitive-headers: "*"
+  add-host-header: true
+  retryable: true
+
+#hytrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeout-in-milliseconds: 600000
+#
+#ribbon:
+#  ReadTimeout: 600000
+#  ConnectTimeout: 600000

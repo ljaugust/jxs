@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jxs.iml" filepath="$PROJECT_DIR$/jxs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jxs-client/jxs-client.iml" filepath="$PROJECT_DIR$/jxs-client/jxs-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jxs-server/jxs-server.iml" filepath="$PROJECT_DIR$/jxs-server/jxs-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jxs-uaa/jxs-uaa.iml" filepath="$PROJECT_DIR$/jxs-uaa/jxs-uaa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jxs-zuul/jxs-zuul.iml" filepath="$PROJECT_DIR$/jxs-zuul/jxs-zuul.iml" />
+    </modules>
+  </component>
+</project>
