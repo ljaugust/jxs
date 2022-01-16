@@ -1,5 +1,5 @@
 # jxs
-2020.5.9更新——京鲜生项目(vue+spring cloud+mybatis-plus+spring security oauth2.0)
+京鲜生项目(vue+spring cloud+mybatis-plus+spring security oauth2.0)
 
 ### 项目介绍
 
